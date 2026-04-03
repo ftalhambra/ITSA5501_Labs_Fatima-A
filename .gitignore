@@ -1,5 +1,42 @@
+##################################
 # Terraform
+##################################
 .terraform/
 *.tfstate
 *.tfstate.backup
+*.tfvars
+*.lock.hcl
+
+##################################
+# Secrets / Environment Variables
+##################################
+.env
+.env.*
+*.pem
+*.key
+*.crt
+*.secret
+*.secrets
+*credentials*
+
+##################################
+# Executables / Binaries
+##################################
 *.exe
+*.dll
+*.bin
+
+##################################
+# Docker
+##################################
+*.log
+docker-compose.override.yml
+
+##################################
+# Monitoring / Grafana
+##################################
+grafana-data/
+prometheus-data/
+alertmanager-data/
+
+##################################
